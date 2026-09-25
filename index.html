@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BlowWater</title>
+<meta name="description" content="BlowWater — real conversations with people learning the same language as you, turned into your primary learning material.">
+<style>
+  /* Same palette and font stack as privacy.html, so the two pages read as one
+     site rather than two. */
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e3e3e6;
+    --accent: #0a63c9;
+    --on-accent: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131315;
+      --fg: #ececee;
+      --muted: #9d9da3;
+      --rule: #2c2c30;
+      --accent: #6ba8f5;
+      --on-accent: #131315;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 4rem 1.25rem 3rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  }
+  /* Wider than the 26rem this held when it was one button: paragraphs this long
+     need a line length that doesn't run to a dozen words. Prose is left-aligned
+     for the same reason — centred body text is hard to track back to the start
+     of the next line — and only the title and the button stay centred. */
+  main { max-width: 34rem; margin: 0 auto; }
+  h1 { font-size: 2.25rem; line-height: 1.2; margin: 0 0 1.5rem; letter-spacing: -.02em; text-align: center; }
+  /* The section headings. Set in the copy's own capitals, so the size does the
+     separating rather than the letterforms alone — caps at body size read as
+     shouting, caps at this size read as a heading. */
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    letter-spacing: .02em;
+    margin: 2.75rem 0 .75rem;
+  }
+  p { margin: 0 0 1rem; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin-bottom: 2.5rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: .6rem; }
+  li b { font-weight: 600; }
+  a { color: var(--accent); }
+  .cta { margin-top: 3.5rem; text-align: center; }
+  .btn {
+    display: block;
+    background: var(--accent);
+    color: var(--on-accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    /* Padding rather than a fixed height, so the target grows with the text at
+       larger accessibility sizes instead of clipping it. */
+    padding: .85rem 1.5rem;
+    min-height: 44px;
+  }
+  .btn:hover { opacity: .9; }
+  .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  /* The button does nothing at all for a visitor with no mail client, and it
+     fails silently. This is the copyable way out of that. */
+  .fallback { color: var(--muted); font-size: .9rem; margin: 1rem 0 0; }
+  footer {
+    margin-top: 4rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>BlowWater</h1>
+
+  <p class="lead">No expensive tutors. No time spent teaching. Just real
+  conversations with people who are also learning the same language as you,
+  turning everyday dialogue into your primary learning material.</p>
+
+  <h2>CHAT BEFORE YOU'RE FLUENT</h2>
+  <p>Language learning without expensive tutors, endless grammar drills, or
+  waiting until you are "fluent enough" to speak. BlowWater turns real-time
+  conversations with real people into your primary study material from day one.</p>
+
+  <h2>REAL-TIME DUAL-LANGUAGE CHAT</h2>
+  <p>Write in your native language. Your message sends in the language you are
+  learning, and their reply arrives translated back to you. Both versions stay on
+  screen so you always retain full context while building real conversational
+  confidence.</p>
+
+  <h2>CONTEXT-BASED LEARNING</h2>
+  <ul>
+    <li><b>Word Translation:</b> Tap any word in a message to see its meaning,
+    hear pronunciation, and save it to your deck.</li>
+    <li><b>Conversational Memory:</b> Saved words remember the exact sentence
+    they came from—no random, out-of-context word lists.</li>
+    <li><b>Full Translation:</b> Long-press any complete message for an instant
+    full translation.</li>
+  </ul>
+
+  <h2>DAILY QUIZZES</h2>
+  <ul>
+    <li>Turn your past conversations into interactive multiple-choice quizzes.</li>
+    <li>Smart review intervals move correct answers further out and bring
+    difficult words back sooner.</li>
+    <li>Your next daily match stays blurred until you complete your quick
+    review.</li>
+  </ul>
+
+  <h2>PRONUNCIATION &amp; SPEAKING FEEDBACK</h2>
+  <p>Read messages aloud to get pinpoint accuracy feedback. BlowWater highlights
+  the specific sounds or words you missed instead of giving a generic score out
+  of ten. Tap to hear audio playback anytime to practice mimicking real speech.</p>
+
+  <h2>NO ADS, NO SUBSCRIPTIONS</h2>
+  <p>Zero ads, no monthly fees and no annual fees.
+  BlowWater is free to use with the standard AI model, and premium models are
+  optional one-time purchases you can ignore entirely. Download BlowWater today
+  and start talking.</p>
+
+  <div class="cta">
+    <a class="btn" href="mailto:hello@blowwater.app?subject=BlowWater%20feedback">Send feedback</a>
+
+    <p class="fallback">Or write to
+    <a href="mailto:hello@blowwater.app">hello@blowwater.app</a></p>
+  </div>
+
+  <footer><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Use</a> · <a href="/delete-account.html">Delete Account</a></footer>
+
+</main>
+</body>
+</html>
