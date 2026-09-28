@@ -67,10 +67,11 @@
 <main>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Joker · Last updated 8 August 2026</p>
+  <p class="updated">Joker · Last updated 28 September 2026</p>
 
-  <p class="lede">Joker is an app for practising a language by chatting with
-  other people who are learning too. This page explains what the app collects,
+  <p class="lede">Joker is a chat app for friends and family that translates
+  as you talk, so you can practise a language with the people you already
+  know. This page explains what the app collects,
   what it does with it, and who else sees it. Joker is operated by Cheung Pak
   Wai, and “we” and “us” mean us.</p>
 
@@ -82,18 +83,22 @@
   password or an identifier from Sign in with Apple or Google Sign-In. If you use
   a password we store only a hashed version of it, never the password itself.</p>
 
-  <p><strong>Your profile.</strong> Your sex, age, a short bio, a profile photo,
-  the language you speak and the language you are learning.</p>
+  <p><strong>Your profile.</strong> Your nickname, a profile photo if you add
+  one, the language you speak and the language you are learning.</p>
 
-  <p><strong>Where you are.</strong> Your approximate location and the name of
-  your area, so the app can show you learners nearby. This is only sent while you
-  give the app location permission, and you can withdraw it at any time in iOS
-  Settings — matching will then be unable to find people near you.</p>
+  <p><strong>Your contacts in Joker.</strong> The invite links you create and
+  who joined through them, the people you chat with, and the group chats you
+  are in, with their names and photos.</p>
+
+  <p>Joker does not collect your location, and it does not read your phone’s
+  address book.</p>
 
   <p><strong>Your conversations and learning.</strong> The messages you send and
-  receive, stored both as you wrote them and as they were translated, along with
-  reactions, replies, read state and timestamps. Also the words you bookmark and
-  the message each one came from, and your quiz settings.</p>
+  receive, in one-to-one and group chats, stored both as you wrote them and as
+  they were translated, along with reactions, replies, read state and
+  timestamps. Also your study cards — the words you bookmark and the message
+  each one came from, cards you make from a scan or import from Anki — your
+  review history and your deck settings.</p>
 
   <p><strong>Your device and purchases.</strong> A notification token so we can
   send push notifications, a record of your in-app purchases and your remaining
@@ -108,16 +113,16 @@
   your device model (“iPhone 14 Pro”, not an identifier for your particular
   phone), which part of our API failed, the status code it returned, a brief
   error code, and your account id if you are signed in. It does not include the
-  contents of your messages, your photos, your name or email, your location, or
+  contents of your messages, your photos, your name or email, or
   any advertising identifier.</p>
 
   <h2>What we do with it</h2>
 
   <ul>
-    <li>Show you people nearby who are learning the language you are learning.</li>
+    <li>Let you chat with the friends and family you invite.</li>
     <li>Translate your messages so you can hold a conversation before you are fluent.</li>
-    <li>Send you notifications about matches and messages.</li>
-    <li>Keep your word list and build your daily quizzes from it.</li>
+    <li>Send you notifications about messages and about cards due for review.</li>
+    <li>Keep your cards and schedule your reviews.</li>
     <li>Process purchases and track your balance.</li>
     <li>Act on blocks and reports.</li>
   </ul>
@@ -138,7 +143,7 @@
     verifying in-app purchase receipts.</li>
     <li><strong>Google</strong> — Google Sign-In, push notifications on Android,
     and verifying Google Play purchases.</li>
-    <li><strong>Amazon Web Services</strong> — profile photos are stored on S3
+    <li><strong>Amazon Web Services</strong> — profile and group photos are stored on S3
     and delivered through CloudFront using links that expire.</li>
   </ul>
 
@@ -148,10 +153,10 @@
   <h2>What stays on your phone</h2>
 
   <ul>
-    <li><strong>The profile picture check.</strong> When the app checks that your
-    profile picture contains a face, that runs entirely on your device using
-    Apple’s Vision framework. The photo is not sent anywhere to be analysed —
-    only the yes-or-no answer reaches us.</li>
+    <li><strong>Scanning text.</strong> When you photograph printed text to make
+    cards from it, the text is read on your device using Apple’s Vision
+    framework. The photo is not sent anywhere — only the sentences you choose to
+    turn into cards reach us.</li>
     <li><strong>Dictionary lookups.</strong> The dictionary and the furigana
     readings are built into the app. Tapping a word to see what it means does not
     contact any server.</li>
@@ -177,9 +182,10 @@
 
   <p>You can delete your account from inside the app, under your profile. When
   you do, we remove your email address, name, password, Apple and Google sign-in
-  identifiers, profile photo, bio and location, delete the photo itself from
-  storage, and sign you out everywhere. Your conversations disappear from the
-  other person’s chat list and can no longer be opened.</p>
+  identifiers and profile photo, delete the photo itself from
+  storage, and sign you out everywhere. Your one-to-one conversations disappear
+  from the other person’s chat list and can no longer be opened; group chats
+  carry on for their other members.</p>
 
   <p>To be straightforward about the part that is not erased: the messages
   themselves, and the words saved from them, remain in our database rather than
@@ -194,7 +200,7 @@
   <h2>Your choices</h2>
 
   <ul>
-    <li>Location and microphone permissions can be turned off at any time in iOS
+    <li>Camera and microphone permissions can be turned off at any time in iOS
     Settings.</li>
     <li>Push notifications can be turned off in iOS Settings or in the app.</li>
     <li>You can change or clear your profile details in the app.</li>
@@ -205,7 +211,7 @@
   <h2>Security</h2>
 
   <p>Passwords are stored only as bcrypt hashes. Traffic between the app and our
-  servers is encrypted in transit. Profile photos are served through links that
+  servers is encrypted in transit. Photos are served through links that
   expire, so a copied URL does not stay valid.</p>
 
   <p>No service can promise perfect security, and we would rather say so than
