@@ -67,11 +67,11 @@
 <main>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Joker · Last updated 28 September 2026</p>
+  <p class="updated">Joker · Last updated 4 October 2026</p>
 
-  <p class="lede">Joker is a chat app for friends and family that translates
-  as you talk, so you can practise a language with the people you already
-  know. This page explains what the app collects,
+  <p class="lede">Joker is a Japanese learning app: a chat app for friends
+  and family that translates as you talk, so you learn Japanese vocabulary from
+  conversations with the people you already know. This page explains what the app collects,
   what it does with it, and who else sees it. Joker is operated by Cheung Pak
   Wai, and “we” and “us” mean us.</p>
 
@@ -90,15 +90,25 @@
   who joined through them, the people you chat with, and the group chats you
   are in, with their names and photos.</p>
 
-  <p>Joker does not collect your location, and it does not read your phone’s
-  address book.</p>
+  <p>Joker does not ask for your location, and it does not read your phone’s
+  address book. A photo you send from the iPhone app is re-encoded on your
+  phone before it is uploaded, which removes its location and other camera
+  details.</p>
 
   <p><strong>Your conversations and learning.</strong> The messages you send and
   receive, in one-to-one and group chats, stored both as you wrote them and as
   they were translated, along with reactions, replies, read state and
   timestamps. Also your study cards — the words you bookmark and the message
   each one came from, cards you make from a scan or import from Anki — your
-  review history and your deck settings.</p>
+  review history, which the Stats tab counts by day, and your deck
+  settings.</p>
+
+  <p><strong>Photos and stickers you send.</strong> A photo you send in a chat
+  is stored with a smaller preview of it, and both are deleted 24 hours after
+  you send it. A sticker is stored only as a reference — which Signal sticker
+  pack it comes from, that pack’s public key, and which sticker in it — and the
+  sticker packs you add to your stickers are kept with your account. We never
+  download or store the sticker images themselves.</p>
 
   <p><strong>Your device and purchases.</strong> A notification token so we can
   send push notifications, a record of your in-app purchases and your remaining
@@ -122,7 +132,8 @@
     <li>Let you chat with the friends and family you invite.</li>
     <li>Translate your messages so you can hold a conversation before you are fluent.</li>
     <li>Send you notifications about messages and about cards due for review.</li>
-    <li>Keep your cards and schedule your reviews.</li>
+    <li>Keep your cards, schedule your reviews, and show you how many you
+    reviewed each day.</li>
     <li>Process purchases and track your balance.</li>
     <li>Act on blocks and reports.</li>
   </ul>
@@ -143,9 +154,18 @@
     verifying in-app purchase receipts.</li>
     <li><strong>Google</strong> — Google Sign-In, push notifications on Android,
     and verifying Google Play purchases.</li>
-    <li><strong>Amazon Web Services</strong> — profile and group photos are stored on S3
-    and delivered through CloudFront using links that expire.</li>
+    <li><strong>Amazon Web Services</strong> — profile and group photos, and
+    the photos you send in chats, are stored on S3 and delivered through
+    CloudFront using links that expire.</li>
   </ul>
+
+  <p><strong>Sticker packs come straight from Signal.</strong> Joker’s
+  stickers are Signal sticker packs. When you send, view or add a sticker, your
+  phone downloads the pack directly from Signal’s servers (cdn-ca.signal.org),
+  and a sticker link that does not include the pack’s key is looked up in the
+  public directory at signalstickers.org. Those requests do not go through us,
+  and like any website those servers see your IP address and which pack was
+  requested. Joker is not affiliated with Signal or with signalstickers.org.</p>
 
   <p>We do not sell your personal information, and we do not share it with
   anyone for advertising.</p>
@@ -165,14 +185,24 @@
     language installed; if it does not, iOS sends the audio to Apple to
     recognise it. Either way the recording never reaches us — we receive only
     whether what you said matched.</li>
+    <li><strong>Reading aloud.</strong> The speaker button, and Auto in card
+    review, use your phone’s own voices. Nothing is sent to read a word or a
+    sentence, and Auto checks whether headphones are connected on your phone
+    alone.</li>
+    <li><strong>Translating definitions.</strong> Dictionary definitions are
+    translated into your language with Apple’s Translation framework, on your
+    device.</li>
+    <li><strong>Exporting to Anki.</strong> The export file is made on your
+    phone and goes wherever you choose to save or share it.</li>
   </ul>
 
   <h2>What we don’t do</h2>
 
   <p>Joker contains no analytics SDK, no advertising SDK and no third-party
   trackers. The only outside components in the app are the ones for signing in
-  and for reading Japanese text. We do not profile you for advertising, and we do
-  not sell data to anyone.</p>
+  with Google, for reading Japanese text, for opening Anki files, and a few that
+  only help draw the interface; none of them collects data for anyone else. We
+  do not profile you for advertising, and we do not sell data to anyone.</p>
 
   <p>That includes the error reports described above: they go only to our own
   servers, never to a third-party crash-reporting or analytics service, and they
@@ -193,7 +223,9 @@
   person’s side of it from the other’s account. If you want your messages removed
   as well, email us and we will do it.</p>
 
-  <p>Error reports are deleted automatically after 30 days, whether or not they
+  <p>Photos sent in chats, and their previews, are deleted from our storage 24
+  hours after they are sent; the message stays in the chat as an expired photo.
+  Error reports are deleted automatically after 30 days, whether or not they
   were attached to an account. We keep everything else for as long as your
   account exists.</p>
 
